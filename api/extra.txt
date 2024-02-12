@@ -1,0 +1,84 @@
+home - /
+        adminLoginForm - /adminLogin
+                if right -> navigate to /admin
+                else -> /
+        
+        
+        events->
+
+                /eventName
+
+event - /eventName
+
+        show -> all competitions
+
+        add competition -> /addCom 
+                        create-> add to competition collection
+                        navigate(/eventName);
+
+
+competition - /eventName/comName
+
+        box - > register |  I'm coordinator
+
+        register -> /eventName/comName/register
+
+                        register -> add to participant collection
+
+        I'm coordinator -> /eventName/comName/coordinatorLogin
+
+                if right -> navigate -> /eventName/comName/coordinatorLogin/coordinator
+                                this will be coordinator page
+
+                else -> /eventName/comName
+
+
+adminLoginForm
+
+admin - /adminLogin/admin/
+
+        -> show all events 
+        -> + button (To add the event)
+        
+        -> click any event -- navigate(/adminLogin/admin/eventName);
+        -> two button of update nd delete for every event
+
+        -> show all admin
+
+
+
+homepage - /
+
+        -> all events 
+        -> login admin
+
+
+
+coordinatorLoginForm
+
+coordinatorpage - /eventName/comName/coordinatorLogin/coordinator
+
+        -> comName data 
+
+        -> all participants of that competition
+        -> update delete button for every participant
+
+
+add competition form
+        name , description , date , vanue , max participants
+                next
+                        coordinator 1 detail, coordinator 2 detail
+                        create competition
+
+
+event page - /eventName
+
+        -> show all competitions
+        -> create competition (tmare jyathi kravu hoy tyathi)
+
+
+
+
+// signup 
+        event
+        competition
